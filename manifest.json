@@ -1,0 +1,23 @@
+{
+    "manifest_version": 2,
+    "name": "Outcognito",
+    "version": "2.0",
+    "description": "Outcognito tweets all yout shit",
+    "permissions": [
+      "webRequestBlocking",
+      "webRequest",
+      "activeTab",
+      "tabs",
+      "storage",
+      "http://*heroku.com/*"
+    ],
+    "background": {
+      "scripts": ["background.js"],
+      "persistent": true
+
+    },
+    "browser_action": {
+        "default_icon": "icon16.png",
+        "default_popup": "popup.html"
+      }
+  }
