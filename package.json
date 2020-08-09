@@ -1,0 +1,24 @@
+{
+  "name": "outcognito",
+  "version": "1.0.0",
+  "description": "In a world where nobody cares about security, browsing doesn't get more transparent than this!",
+  "main": "background.js",
+  "scripts": {
+    "start": "node background.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/waltzaround/outcognito.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/waltzaround/outcognito/issues"
+  },
+  "homepage": "https://github.com/waltzaround/outcognito#readme",
+  "dependencies": {
+    "dotenv-safe": "^8.2.0",
+    "twitter": "^1.7.1"
+  }
+}
