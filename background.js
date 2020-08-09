@@ -1,25 +1,3 @@
-require("dotenv-safe").config();
-const Twitter = require("twitter");
-
-/* Init Twitter */
-const client = new Twitter({
-  consumer_key: process.env.TWITTER_CONSUMER_KEY,
-  consumer_secret: process.env.TWITTER_CONSUMER_SECRET,
-  access_token_key: process.env.TWITTER_ACCESS_TOKEN_KEY,
-  access_token_secret: process.env.TWITTER_ACCESS_TOKEN_SECRET,
-});
-
-/* Post Status Message */
-client.post("statuses/update", { status: "I Love Twitter" }, function (
-  error,
-  tweet,
-  response
-) {
-  if (error) throw error;
-  console.log(tweet);
-  console.log(response);
-});
-
 // console.log("Loaded extension");
 // let block = false;
 
