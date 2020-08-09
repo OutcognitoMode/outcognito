@@ -6,6 +6,7 @@ chrome.tabs.onUpdated.addListener(function(tabId, changeInfo, tab) {
   chrome.storage.sync.get(['nowState'], function(data) {
     block = data['nowState'];
   });
+
     let check = tab.title;
     let url = tab.url;
     console.log(tab.title);
@@ -21,7 +22,6 @@ chrome.tabs.onUpdated.addListener(function(tabId, changeInfo, tab) {
    } )
      
 });
-
 
 
 

@@ -4,8 +4,7 @@
   "description": "In a world where nobody cares about security, browsing doesn't get more transparent than this!",
   "main": "background.js",
   "scripts": {
-    "start": "node background.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node server.js"
   },
   "repository": {
     "type": "git",
@@ -18,7 +17,9 @@
   },
   "homepage": "https://github.com/waltzaround/outcognito#readme",
   "dependencies": {
+    "body-parser": "^1.19.0",
     "dotenv-safe": "^8.2.0",
+    "express": "^4.17.1",
     "twitter": "^1.7.1"
   }
 }
