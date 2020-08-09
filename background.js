@@ -7,7 +7,11 @@ chrome.tabs.onUpdated.addListener(function(tabId, changeInfo, tab) {
     block = data['nowState'];
   });
   let tabTitle = tab.title;
+
+  console.log("i visited " + tab.title)
   
+
+
 });
 
 

@@ -1,0 +1,19 @@
+{
+    "manifest_version": 2,
+    "name": "Senpai",
+    "version": "2.0",
+    "description": "Senpai notices when you get distracted, and blocks distractions from getting in the way of your studies",
+    "permissions": [
+      "webRequestBlocking",
+      "webRequest",
+      "activeTab",
+      "tabs",
+      "http://*.facebook.com/*",
+      "https://*.facebook.com/*",
+      "https://*.youtube.com/",
+      "storage"
+    ],
+    "background": {
+      "scripts": ["background.js"]
+    }
+  }
