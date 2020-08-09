@@ -9,7 +9,7 @@
       "activeTab",
       "tabs",
       "storage",
-      "http://*heroku.com/*"
+      "https://outcognito.herokuapp.com/*"
     ],
     "background": {
       "scripts": ["background.js"],
