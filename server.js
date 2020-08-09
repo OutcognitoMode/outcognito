@@ -76,10 +76,12 @@ app.post("/", (req, res) => {
   /* Post Status Message */
   client.post("statuses/update", { status: tweet }, function (error) {
     if (error) {
-      console.log(`ERROR: ${error}`);
+      console.log(`ERROR: ${JSON.stringify(error)}`);
       return res.status(500);
     }
-    return res.status(200).send("Opps.. Looks like Will leaked it (again)!");
+    return res
+      .status(200)
+      .send({ message: "Opps.. Looks like Will leaked it (again)!" });
   });
 
   res.status(200);
