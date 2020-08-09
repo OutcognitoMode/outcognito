@@ -1,19 +1,14 @@
 {
-    "manifest_version": 2,
-    "name": "Senpai",
-    "version": "2.0",
-    "description": "Senpai notices when you get distracted, and blocks distractions from getting in the way of your studies",
+    "name": "My aaaaaa",
+    "version": "1.1",
+    "description": "A browser action with a popup dump of all bookmarks, including search, add, edit and delete.",
     "permissions": [
-      "webRequestBlocking",
-      "webRequest",
-      "activeTab",
-      "tabs",
-      "http://*.facebook.com/*",
-      "https://*.facebook.com/*",
-      "https://*.youtube.com/",
-      "storage"
+      "bookmarks"
     ],
-    "background": {
-      "scripts": ["background.js"]
-    }
+    "browser_action": {
+        "default_title": "My aaaaa",
+        "default_icon": "icon.png",
+        "default_popup": "popup.html"
+    },
+    "manifest_version": 2
   }
